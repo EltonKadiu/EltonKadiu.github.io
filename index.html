@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="sq" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elton Kadiu | Portofolio Personale</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome për Ikona -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0f172a',
+                            light: '#f8fafc',
+                            accent: '#6366f1',
+                            secondary: '#3b82f6'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-dark text-slate-100 font-sans antialiased">
+
+    <!-- NAVIGATORI (HEADER) -->
+    <header class="fixed top-0 left-0 w-full bg-brand-dark/90 backdrop-blur-md z-50 border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-wider bg-gradient-to-r from-indigo-400 to-blue-500 bg-clip-text text-transparent">
+                ELTON KADIU
+            </a>
+            
+            <!-- Menuja për Desktop -->
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#about" class="text-slate-300 hover:text-indigo-400 transition-colors">Rreth Meje</a>
+                <a href="#projects" class="text-slate-300 hover:text-indigo-400 transition-colors">Projektet</a>
+                <a href="#contact" class="text-slate-300 hover:text-indigo-400 transition-colors">Kontakt</a>
+            </nav>
+
+            <!-- Butoni i menusë për celularë -->
+            <button onclick="toggleMobileMenu()" class="md:hidden text-slate-300 focus:outline-none">
+                <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
+            </button>
+        </div>
+
+        <!-- Menuja Mobile (e fshehur fillimisht) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-dark border-b border-slate-800 px-4 pt-2 pb-4 space-y-2">
+            <a href="#about" onclick="toggleMobileMenu()" class="block py-2 text-slate-300 hover:text-indigo-400 transition-colors">Rreth Meje</a>
+            <a href="#projects" onclick="toggleMobileMenu()" class="block py-2 text-slate-300 hover:text-indigo-400 transition-colors">Projektet</a>
+            <a href="#contact" onclick="toggleMobileMenu()" class="block py-2 text-slate-300 hover:text-indigo-400 transition-colors">Kontakt</a>
+        </div>
+    </header>
+
+    <!-- SEKSIONI KRYESOR (HERO) -->
+    <section class="pt-32 pb-20 md:pt-40 md:pb-32 px-4 max-w-6xl mx-auto flex flex-col items-center text-center">
+        <div class="w-24 h-24 sm:w-32 sm:h-32 rounded-full overflow-hidden border-4 border-indigo-500 shadow-lg shadow-indigo-500/20 mb-6 bg-slate-800 flex items-center justify-center">
+            <!-- Mund ta zëvendësosh këtë ikonë me një foto tënden më vonë -->
+            <i class="fa-solid fa-user-astronaut text-4xl sm:text-5xl text-indigo-400"></i>
+        </div>
+        <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-4">
+            Përshëndetje, unë jam <br class="sm:hidden">
+            <span class="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                Elton Kadiu
+            </span>
+        </h1>
+        <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mb-8 leading-relaxed">
+            Mirësevini në portofolin tim! Unë jam një zhvillues i ri i pasionuar pas teknologjisë, ndërtimit të faqeve të internetit dhe krijimit të zgjidhjeve digjitale.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#projects" class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-8 py-3 rounded-lg shadow-lg shadow-indigo-600/30 transition-all text-center">
+                Shiko Punët e Mia
+            </a>
+            <a href="#contact" class="border border-slate-700 hover:border-slate-500 text-slate-300 px-8 py-3 rounded-lg transition-all text-center">
+                Më Kontakto
+            </a>
+        </div>
+    </section>
+
+    <!-- SEKSIONI RRETH MEJE -->
+    <section id="about" class="py-20 border-t border-slate-800/80 bg-slate-900/40">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-12 text-center md:text-left">
+                <span class="border-b-4 border-indigo-500 pb-2">Rreth Meje</span>
+            </h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-slate-300 leading-relaxed text-lg">
+                    <p>
+                        Unë besoj se çdo projekt është një mundësi e re për të mësuar diçka të bukur dhe për të sfiduar veten. Ky portofol është krijuar për të qenë shtëpia e të gjitha projekteve të mia në GitHub.
+                    </p>
+                    <p>
+                        Aktualisht po fokusohem në zhvillimin e aftësive të mia në dizajnimin e faqeve web moderne, strukturimin e bazave të të dhënave dhe punën me platforma si GitHub për bashkëpunim efektiv.
+                    </p>
+                    <div class="flex gap-4 pt-4">
+                        <a href="https://github.com/EltonKadiu" target="_blank" class="text-3xl text-slate-400 hover:text-slate-100 transition-colors">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <!-- Shto rrjete të tjera sociale nëse dëshiron më vonë -->
+                    </div>
+                </div>
+                
+                <!-- Karta e Aftësive -->
+                <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700/50">
+                    <h3 class="text-xl font-bold mb-6 text-indigo-400">Teknologjitë me të cilat punoj:</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-slate-700 text-slate-200 px-4 py-2 rounded-lg text-sm font-medium">HTML</span>
+                        <span class="bg-slate-700 text-slate-200 px-4 py-2 rounded-lg text-sm font-medium">CSS</span>
+                        <span class="bg-slate-700 text-slate-200 px-4 py-2 rounded-lg text-sm font-medium">JavaScript</span>
+                        <span class="bg-slate-700 text-slate-200 px-4 py-2 rounded-lg text-sm font-medium">C++</span>
+                        <span class="bg-slate-700 text-slate-200 px-4 py-2 rounded-lg text-sm font-medium">Java</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEKSIONI I PROJEKTEVE -->
+    <section id="projects" class="py-20 border-t border-slate-800/80">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-12 text-center">
+                <span class="border-b-4 border-indigo-500 pb-2">Projektet e Mia</span>
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Projekti 1 (Placeholder) -->
+                <div class="bg-slate-800/30 rounded-xl overflow-hidden border border-slate-800 hover:border-slate-700 transition-all group hover:-translate-y-1">
+                    <div class="h-48 bg-gradient-to-br from-indigo-900 to-indigo-700 flex items-center justify-center">
+                        <i class="fa-solid fa-code text-5xl text-indigo-200 group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-slate-100">Portofoli Im i Parë</h3>
+                        <p class="text-slate-400 text-sm mb-4">
+                            Faqja ime personale e ndërtuar me HTML,CSS dhe e hostuar plotësisht në GitHub Pages.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-indigo-400 font-semibold bg-indigo-950/50 px-3 py-1 rounded-full">Faqe Web</span>
+                            <a href="#" class="text-sm text-slate-300 hover:text-white flex items-center gap-1 font-medium">
+                                Shiko Kodin <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projekti 2 (Placeholder) -->
+                <div class="bg-slate-800/30 rounded-xl overflow-hidden border border-slate-800 hover:border-slate-700 transition-all group hover:-translate-y-1">
+                    <div class="h-48 bg-gradient-to-br from-purple-900 to-purple-700 flex items-center justify-center">
+                        <i class="fa-solid fa-cube text-5xl text-purple-200 group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-slate-100">Projekti i Ardhshëm</h3>
+                        <p class="text-slate-400 text-sm mb-4">
+                            Hapësirë e rezervuar për projektin tënd të radhës! Këtu mund të vendosësh çdo gjë që dëshiron të ndërtosh.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-purple-400 font-semibold bg-purple-950/50 px-3 py-1 rounded-full">Së Shpejti</span>
+                            <span class="text-sm text-slate-500 cursor-not-allowed">Nuk ka kod</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projekti 3 (Placeholder) -->
+                <div class="bg-slate-800/30 rounded-xl overflow-hidden border border-slate-800 hover:border-slate-700 transition-all group hover:-translate-y-1">
+                    <div class="h-48 bg-gradient-to-br from-blue-900 to-blue-700 flex items-center justify-center">
+                        <i class="fa-solid fa-gears text-5xl text-blue-200 group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-slate-100">Aplikacion Java</h3>
+                        <p class="text-slate-400 text-sm mb-4">
+                            Mund të lidhësh dhe të tregosh projektet e tua që bën në shkollë ose në kurse të ndryshme programimi.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-blue-400 font-semibold bg-blue-950/50 px-3 py-1 rounded-full">Programim</span>
+                            <span class="text-sm text-slate-500 cursor-not-allowed">Nuk ka kod</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEKSIONI I KONTAKTIT -->
+    <section id="contact" class="py-20 border-t border-slate-800/80 bg-slate-900/40">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">
+                <span class="border-b-4 border-indigo-500 pb-2">Le të punojmë së bashku!</span>
+            </h2>
+            <p class="text-slate-400 text-lg mb-8 max-w-lg mx-auto">
+                Nëse ke ndonjë pyetje, dëshiron të bashkëpunosh në një projekt, ose thjesht dëshiron të më thuash përshëndetje, më shkruaj!
+            </p>
+            
+            <div class="inline-flex flex-col sm:flex-row gap-6 justify-center items-center">
+                <a href="mailto:elton.kadiu@example.com" class="flex items-center gap-3 bg-indigo-600 hover:bg-indigo-500 text-white font-medium px-6 py-3 rounded-xl transition-all shadow-lg shadow-indigo-600/25">
+                    <i class="fa-solid fa-envelope"></i>
+                    eltonkadiu1981@gmail.com
+                </a>
+                <span class="text-slate-500 hidden sm:inline">|</span>
+                <div class="flex gap-4">
+                    <a href="https://github.com/EltonKadiu" target="_blank" class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-300 hover:text-white hover:bg-slate-700 transition-all">
+                        <i class="fa-brands fa-github text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-900 bg-brand-dark py-8 text-center text-sm text-slate-500">
+        <p>&copy; 2026 Elton Kadiu. Të gjitha të drejtat e rezervuara.</p>
+    </footer>
+
+    <!-- Script i thjeshtë për menunë mobile -->
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            menu.classList.toggle('hidden');
+            
+            if (menu.classList.contains('hidden')) {
+                icon.className = 'fa-solid fa-bars text-xl';
+            } else {
+                icon.className = 'fa-solid fa-xmark text-xl';
+            }
+        }
+    </script>
+</body>
+</html>
