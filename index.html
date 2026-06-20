@@ -70,11 +70,16 @@
         <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mb-8 leading-relaxed">
             Mirësevini në portofolin tim! Unë jam një zhvillues i ri i pasionuar pas teknologjisë, ndërtimit të faqeve të internetit dhe krijimit të zgjidhjeve digjitale.
         </p>
-        <div class="flex flex-col sm:flex-row gap-4">
-            <a href="#projects" class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-8 py-3 rounded-lg shadow-lg shadow-indigo-600/30 transition-all text-center">
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a href="#projects" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-8 py-3 rounded-lg shadow-lg shadow-indigo-600/30 transition-all text-center">
                 Shiko Punët e Mia
             </a>
-            <a href="#contact" class="border border-slate-700 hover:border-slate-500 text-slate-300 px-8 py-3 rounded-lg transition-all text-center">
+            <!-- BUTONI I SHKARKIMIT TE CV-SE -->
+            <a href="CV-Elton-Kadiu.pdf" download="CV-Elton-Kadiu.pdf" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-semibold px-8 py-3 rounded-lg shadow-lg shadow-emerald-600/30 transition-all text-center flex items-center justify-center gap-2">
+                <i class="fa-solid fa-file-pdf"></i>
+                Shkarko CV
+            </a>
+            <a href="#contact" class="w-full sm:w-auto border border-slate-700 hover:border-slate-500 text-slate-300 px-8 py-3 rounded-lg transition-all text-center">
                 Më Kontakto
             </a>
         </div>
@@ -94,23 +99,36 @@
                     <p>
                         Aktualisht po fokusohem në zhvillimin e aftësive të mia në dizajnimin e faqeve web moderne, strukturimin e bazave të të dhënave dhe punën me platforma si GitHub për bashkëpunim efektiv.
                     </p>
-                    <div class="flex gap-4 pt-4">
-                        <a href="https://github.com/EltonKadiu" target="_blank" class="text-3xl text-slate-400 hover:text-slate-100 transition-colors">
+                    <div class="flex items-center gap-5 pt-4">
+                        <!-- LINKU GITHUB -->
+                        <a href="https://github.com/EltonKadiu" target="_blank" title="GitHub" class="text-3xl text-slate-400 hover:text-slate-100 transition-colors">
                             <i class="fa-brands fa-github"></i>
                         </a>
-                        <!-- Shto rrjete të tjera sociale nëse dëshiron më vonë -->
+                        <!-- LINKU LINKEDIN -->
+                        <a href="https://www.linkedin.com/in/eltonkadiu" target="_blank" title="LinkedIn" class="text-3xl text-slate-400 hover:text-blue-400 transition-colors">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
                     </div>
                 </div>
                 
                 <!-- Karta e Aftësive -->
-                <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700/50">
-                    <h3 class="text-xl font-bold mb-6 text-indigo-400">Teknologjitë me të cilat punoj:</h3>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="bg-slate-700 text-slate-200 px-4 py-2 rounded-lg text-sm font-medium">HTML</span>
-                        <span class="bg-slate-700 text-slate-200 px-4 py-2 rounded-lg text-sm font-medium">CSS</span>
-                        <span class="bg-slate-700 text-slate-200 px-4 py-2 rounded-lg text-sm font-medium">JavaScript</span>
-                        <span class="bg-slate-700 text-slate-200 px-4 py-2 rounded-lg text-sm font-medium">C++</span>
-                        <span class="bg-slate-700 text-slate-200 px-4 py-2 rounded-lg text-sm font-medium">Java</span>
+                <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700/50 flex flex-col justify-between h-full min-h-[250px]">
+                    <div>
+                        <h3 class="text-xl font-bold mb-6 text-indigo-400">Teknologjitë me të cilat punoj:</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="bg-slate-700 text-slate-200 px-4 py-2 rounded-lg text-sm font-medium">HTML</span>
+                            <span class="bg-slate-700 text-slate-200 px-4 py-2 rounded-lg text-sm font-medium">CSS</span>
+                            <span class="bg-slate-700 text-slate-200 px-4 py-2 rounded-lg text-sm font-medium">JavaScript</span>
+                            <span class="bg-slate-700 text-slate-200 px-4 py-2 rounded-lg text-sm font-medium">C++</span>
+                            <span class="bg-slate-700 text-slate-200 px-4 py-2 rounded-lg text-sm font-medium">Java</span>
+                        </div>
+                    </div>
+                    <!--Buton i dedikuar per CV brenda kartes-->
+                    <div class="mt-8 border-t border-slate-700/50 pt-6">
+                        <a href="CV-Elton-Kadiu.pdf" download="CV-Elton-Kadiu.pdf" class="inline-flex items-center gap-2 text-indigo-400 hover:text-indigo-300 font-semibold transition-colors">
+                            <i class="fa-solid fa-file-arrow-down"></i>
+                            Shkarko CV e Eltonit (PDF)
+                        </a>
                     </div>
                 </div>
             </div>
@@ -187,14 +205,19 @@
             </p>
             
             <div class="inline-flex flex-col sm:flex-row gap-6 justify-center items-center">
-                <a href="mailto:elton.kadiu@example.com" class="flex items-center gap-3 bg-indigo-600 hover:bg-indigo-500 text-white font-medium px-6 py-3 rounded-xl transition-all shadow-lg shadow-indigo-600/25">
+                <a href="mailto:eltonkadiu1981@gmail.com" class="flex items-center gap-3 bg-indigo-600 hover:bg-indigo-500 text-white font-medium px-6 py-3 rounded-xl transition-all shadow-lg shadow-indigo-600/25">
                     <i class="fa-solid fa-envelope"></i>
                     eltonkadiu1981@gmail.com
                 </a>
                 <span class="text-slate-500 hidden sm:inline">|</span>
                 <div class="flex gap-4">
-                    <a href="https://github.com/EltonKadiu" target="_blank" class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-300 hover:text-white hover:bg-slate-700 transition-all">
+                    <!-- LINKU GITHUB -->
+                    <a href="https://github.com/EltonKadiu" target="_blank" title="GitHub" class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-300 hover:text-white hover:bg-slate-700 transition-all">
                         <i class="fa-brands fa-github text-xl"></i>
+                    </a>
+                    <!-- LINKU LINKEDIN -->
+                    <a href="https://www.linkedin.com/in/eltonkadiu" target="_blank" title="LinkedIn" class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-300 hover:text-blue-400 hover:bg-slate-700 transition-all">
+                        <i class="fa-brands fa-linkedin text-xl"></i>
                     </a>
                 </div>
             </div>
